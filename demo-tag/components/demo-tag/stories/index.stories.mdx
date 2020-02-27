@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../demo-tag.js';
+
+<Meta 
+  title="DemoTag"
+  parameters={{
+    component: "demo-tag",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# DemoTag
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add demo-tag
+```
+
+```js
+import 'demo-tag/demo-tag.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <demo-tag></demo-tag>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="demo-tag" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <demo-tag .title=${'Hello World'}></demo-tag>
+  `}
+</Story>
